@@ -1,0 +1,50 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input, button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffa500;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #ddd;
+  height: 25px;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #76c7c0;
+  border-radius: 15px 0 0 15px;
+  transition: width 0.5s ease-in-out;
+}
