@@ -24,13 +24,22 @@ A meal tracking web application that calculates personalized calorie and macronu
 
 # Project Setup
 * Clone the repository -
-git clone https://github.com/your-username/vue3-personal-website.git
+git clone https://github.com/your-username/meal-tracker.git
+cd meal-tracker
 
 * Navigate to project directory -
-cd personal-website
+cd meal-tracker
 
-* Install dependencies -
+* Create a .env file in the backend folder -
+PORT=5000
+MONGO_URI=mongodb+srv://<your-username>:<your-password>@cluster0.mongodb.net/mealtracker?retryWrites=true&w=majority
+
+
+* Start the server -
+node server.js
+
+* Frontend Setup -
+cd frontend
 npm install
+npm run serve
 
-* Run development server -
-npm run dev
