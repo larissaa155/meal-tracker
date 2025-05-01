@@ -48,17 +48,15 @@ export default {
   },
   methods: {
     async submitProfile() {
-      // Call the backend to calculate and fetch the user's nutrition info
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/user", // Adjust based on your backend URL
+          "http://localhost:5000/api/user", 
           {
             height: this.height,
             age: this.age,
           }
         );
-
-        // Set the returned data to the local state
+        
         this.calories = response.data.calories;
         this.protein = response.data.protein;
         this.carbs = response.data.carbs;
