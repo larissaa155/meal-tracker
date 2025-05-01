@@ -1,50 +1,62 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f0f8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
 
-.page {
-  max-width: 500px;
-  margin: 2rem auto;
+.container {
+  max-width: 600px;
+  margin: 50px auto;
   padding: 2rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-input, button {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 90%;
-  border-radius: 10px;
+h1, h2, h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 button {
-  background-color: #ff8c00;
+  background-color: #28a745;
   color: white;
+  padding: 12px 20px;
+  margin-top: 10px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffa500;
+  background-color: #218838;
 }
 
-.progress-bar-container {
-  width: 100%;
-  background: #ddd;
-  height: 25px;
-  border-radius: 15px;
-  margin-top: 1rem;
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9f7ef;
+  border-left: 6px solid #2ecc71;
+  border-radius: 10px;
 }
 
-.progress-bar {
-  height: 100%;
-  background: #76c7c0;
-  border-radius: 15px 0 0 15px;
-  transition: width 0.5s ease-in-out;
+.result-box p {
+  font-size: 18px;
+  margin: 8px 0;
 }
